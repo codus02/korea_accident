@@ -19,11 +19,12 @@ alt.themes.enable("dark")
 
 #######################
 # 데이터 불러오기
-df="음주운전교통사고비율_시도_시_군_구__20241204193205.csv"
+file_path="음주운전교통사고비율_시도_시_군_구__20241204193205.csv"
+df = pd.read_csv(file_path, header=1, encoding='cp949')
 
+geojson_file = "SIDO_MAP_2022_geoJSON.json"
+korea_geojson = gpd.read_file(geojson_file)
 
-with open("SIDO_MAP_2022_geoJSON.json", encoding="utf-8") as f:
-    korea_geojson = json.load(f)
 
 #######################
 #######################
