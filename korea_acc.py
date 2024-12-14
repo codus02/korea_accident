@@ -19,8 +19,8 @@ alt.themes.enable("dark")
 
 #######################
 # 데이터 불러오기
-df = SIDO_MAP_2022_geoJSON.json # csv 파일 불러오기
-korea_geojson = drink_accident.csv # json 파일 불러오기
+df=음주운전교통사고비율_시도_시_군_구__20241204193205.csv
+korea_geojson = SIDO_MAP_2022_geoJSON.json # json 파일 불러오기
 
 
 
